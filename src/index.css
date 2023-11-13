@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import "./styles/css/colors.css";
+
+/***** General *****/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: var(--prussian-blue);
+    color: var(--snow);
+}
+
+.section {
+    min-height: 100vh;
+    padding: 80px 40px 40px 40px;
+    background-color: var(--prussian-blue);
+}
+
+/***** App Component *****/
+.app {
+    min-height: 100vh;
+    background-color: var(--prussian-blue);
+}
+
+/* .background {
+    background-image: url("./images/background.jpg");
+    background-size: cover;
+} */
+
+/* Overriding React Vertical Timeline Component */
+.vertical-timeline {
+    width: 100% !important;
+    padding: 10px 0 !important;
+}
+
+.vertical-timeline-element-content .vertical-timeline-element-date {
+    color: white !important;
+    opacity: 1 !important;
+    font-weight: bold !important;
+    font-size: medium !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.vertical-timeline-element {
+    margin: 10px 0 !important;
+}
+
+.vertical-timeline-element-content p {
+    margin: 0px !important;
+    line-height: normal !important;
+}
+
+/***** Media Query *****/
+@media (min-width: 1060px) {
+    .section {
+        padding: 80px;
+    }
+}

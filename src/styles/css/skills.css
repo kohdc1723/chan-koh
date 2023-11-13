@@ -1,0 +1,33 @@
+.skills h2 {
+    padding-bottom: 40px;
+}
+
+.skills__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills__labels {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 64px;
+    max-width: 600px;
+}
+
+.skills__label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100px;
+}
+
+.skills__label-title {
+    font-size: small;
+    font-weight: bold;
+    word-wrap: break-word;
+    text-align: center;
+}

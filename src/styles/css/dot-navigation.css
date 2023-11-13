@@ -1,0 +1,30 @@
+.dot-navigation {
+    position: fixed;
+    right: 25px;
+    top: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.dot-navigation__item {
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: var(--snow);
+}
+
+.dot-navigation__item:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 var(--snow);
+}
+
+.dot-navigation__item-active {
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    border: 5px solid var(--saffron);
+    border-radius: 15px;
+    background-color: var(--snow);
+}

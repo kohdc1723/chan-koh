@@ -1,0 +1,59 @@
+.edu-and-exp {
+    background-color: var(--prussian-blue);
+}
+
+.edu-and-exp h2 {
+    padding-bottom: 40px;
+}
+
+.edu-and-exp__summary {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.edu-and-exp__summary img {
+    width: 80px;
+    height: 80px;
+}
+
+.edu-and-exp__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.edu-and-exp__head h4 {
+    font-size: medium;
+}
+
+.edu-and-exp__position {
+    font-size: large !important;
+}
+
+.edu-and-exp__work {
+    color: var(--tea-green);
+}
+
+.edu-and-exp__location {
+    font-style: italic;
+    font-size: small !important;
+}
+
+.edu-and-exp__detail {
+    padding-bottom: 10px;
+}
+
+.edu-and-exp__detail p {
+    font-size: medium !important;
+}
+
+.edu-and-exp__date {
+    display: flex;
+    justify-content: right;
+    font-style: italic;
+    font-size: small;
+    font-weight: bold;
+    color: var(--tea-green);
+}
