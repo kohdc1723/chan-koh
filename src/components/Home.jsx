@@ -1,5 +1,5 @@
+import { motion } from "framer-motion";
 import { AiFillGithub, AiFillLinkedin, AiFillMail, AiOutlineLink } from "react-icons/ai";
-import { SiGmail } from "react-icons/si";
 import useMediaQuery from "../hooks/useMediaQuery";
 import ProfileImage from "../images/profile.jpg";
 import "../styles/css/home.css";
@@ -13,23 +13,66 @@ const Home = () => {
                 <div className="home__profile">
                     {/* introduction section */}
                     <div className="home__intro">
-                        <p className="home__intro-summary">
+                        <motion.div
+                            className="home__intro-summary"
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ amount: 0.5 }}
+                            transition={{ duration: 0.5 }}
+                            variants={{
+                                hidden: { opacity: 0, x: -50 },
+                                visible: { opacity: 1, x: 0 }
+                            }}
+                        >
                             Hello, I'm <span className="home__intro-name">Chan Koh</span>
                             <br />
                             a <span className="home__intro-job">Software Developer</span>
-                        </p>
+                        </motion.div>
                         {isAboveSmallScreen && (
-                            <p className="home__intro-detail">I am a recent graduate of the Computer Systems Technology program at BCIT. Equipped with a strong technical foundation in computer science and hands-on experience in full-stack web development, I am enthusiastic about launching my career in the tech industry.</p>
+                            <motion.div
+                                className="home__intro-detail"
+                                initial="hidden"
+                                whileInView="visible"
+                                viewport={{ amount: 0.5 }}
+                                transition={{ delay: 0.1, duration: 0.5 }}
+                                variants={{
+                                    hidden: { opacity: 0, x: -50 },
+                                    visible: { opacity: 1, x: 0 }
+                                }}
+                            >
+                                I am a recent graduate of the Computer Systems Technology program at BCIT. Equipped with a strong technical foundation in computer science and hands-on experience in full-stack web development, I am enthusiastic about launching my career in the tech industry.
+                            </motion.div>
                         )}
                     </div>
 
                     {/* profile image for mobile screen */}
                     {!isAboveSmallScreen && (
-                        <img className="home__img" src={ProfileImage} alt="profile" />
+                        <motion.div
+                            initial="hidden"
+                            whileInView="visible"
+                            viewport={{ amount: 0.5 }}
+                            transition={{ delay: 0.1, duration: 0.5 }}
+                            variants={{
+                                hidden: { opacity: 0, x: 50 },
+                                visible: { opacity: 1, x: 0 }
+                            }}
+                        >
+                            <img className="home__img" src={ProfileImage} alt="profile" />
+                        </motion.div>
                     )}
 
                     {/* social links */}
-                    <div className="home__socials">
+                    <motion.div
+                        className="home__socials"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ amount: 0.5 }}
+                        transition={{ delay: 0.2, duration: 0.5 }}
+                        variants={{
+                            hidden: { opacity: 0, x: -50 },
+                            visible: { opacity: 1, x: 0 }
+                        }}
+                    >
                         <div className="home__social-item">
                             <AiFillLinkedin />
                             <a href="https://www.linkedin.com/in/kohdc1723" target="_blank" rel="noreferrer">
@@ -46,12 +89,23 @@ const Home = () => {
                             <AiFillMail />
                             <p>kohdc1723@gmail.com</p>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/* profile image for desktop screen */}
                 {isAboveSmallScreen && (
-                    <img className="home__img" src={ProfileImage} alt="profile" />
+                    <motion.div
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ amount: 0.5 }}
+                        transition={{ delay: 0.1, duration: 0.5 }}
+                        variants={{
+                            hidden: { opacity: 0, x: 50 },
+                            visible: { opacity: 1, x: 0 }
+                        }}
+                    >
+                        <img className="home__img" src={ProfileImage} alt="profile" />
+                    </motion.div>
                 )}
             </div>
         </section>

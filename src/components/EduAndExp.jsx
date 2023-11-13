@@ -1,5 +1,7 @@
+import { motion } from "framer-motion";
 import { IoSchoolSharp, IoBriefcaseSharp } from "react-icons/io5"
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
+import useMediaQuery from "../hooks/useMediaQuery";
 import "react-vertical-timeline-component/style.min.css";
 import verticalTimelineStyles from "../styles/verticalTimelineStyles";
 import BcitLogo from "../images/bcit.jpeg";
@@ -10,9 +12,23 @@ import "../styles/css/edu-and-exp.css";
 const EduAndExp = () => {
     return (
         <div id="Edu&Exp" className="section edu-and-exp">
-            <h2>Education / Experience</h2>
+            <motion.h2
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ amount: 0.5 }}
+                transition={{ delay: 0.1, duration: 0.5 }}
+                variants={{
+                    hidden: { opacity: 0, x: -50 },
+                    visible: { opacity: 1, x: 0 }
+                }}
+            >
+                Education / Experience
+            </motion.h2>
             <div className="edu-and-exp__timeline">
-                <VerticalTimeline className="edu-and-exp__vertical-timeline">
+                <VerticalTimeline
+                    className="edu-and-exp__vertical-timeline"
+                    animate={true}
+                >
                     <VerticalTimelineElement
                         contentStyle={verticalTimelineStyles.verticalTimelineElement.contentStyle}
                         contentArrowStyle={verticalTimelineStyles.verticalTimelineElement.contentArrowStyle}

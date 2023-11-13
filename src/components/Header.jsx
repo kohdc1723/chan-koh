@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useRecoilState } from "recoil";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import useMediaQuery from "../hooks/useMediaQuery";
 import useScroll from "../hooks/useScroll";
@@ -19,7 +20,17 @@ const Header = () => {
     const onClickClose = () => setIsMenuToggled(false);
 
     return (
-        <header className={`header ${isScrolled && "header__scrolled"}`}>
+        <motion.div
+            className={`header ${isScrolled && "header__scrolled"}`}
+            initial="hidden"
+            whileInView="visible"
+            // viewport={{ amount: 0.5 }}
+            transition={{ delay: 0.1, duration: 0.5 }}
+            variants={{
+                hidden: { opacity: 0, y: -50 },
+                visible: { opacity: 1, y: 0 }
+            }}
+        >
             {/* title */}
             <h1>Chan.Koh</h1>
 
@@ -79,7 +90,7 @@ const Header = () => {
                     </nav>
                 </div>
             )}
-        </header>
+        </motion.div>
     );
 };
 

@@ -8,12 +8,12 @@ const App = () => {
 
     return (
         <div className="app">
+            {isAboveLargeScreen && <DotNavigation />}
             <Header />
             <Home />
             <EduAndExp />
             <Skills />
             <Projects />
-            {isAboveLargeScreen && <DotNavigation />}
         </div>
     );
 };
