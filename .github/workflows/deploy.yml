@@ -1,0 +1,48 @@
+name: CI/CD ChanKoh React app
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: React app build and deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Github Actions
+        uses: actions/checkout@v3
+
+      - name: Cache node modules
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-build-
+            ${{ runner.OS }}-
+      
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build React app
+        run: npm run build
+        env:
+          CI: false
+      
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ca-central-1
+        
+      - name: Deploy to S3
+        run: aws s3 sync build/ s3://chan-koh --delete
+        
+      # - name: CloudFront invalidation
+      #   env:
+      #     CLOUD_FRONT_ID: ${{ secrets.AWS_CLOUDFRONT_ID }}
+      #   run: |
+      #     aws cloudfront create-invalidation --distribution-id $CLOUD_FRONT_ID --paths /*
+                
