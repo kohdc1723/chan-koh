@@ -28,7 +28,7 @@ My portfolio website where presenting my information and showcasing my projects
 ![skills](https://github.com/kohdc1723/chan-koh/assets/80452136/5c0f4041-96d9-40b7-ab2b-79feab209875)
 
 ### Projects Section
-![projects](https://github.com/kohdc1723/chan-koh/assets/80452136/78f96098-3f96-47aa-8e29-46a520a63e35)
+![projects](https://github.com/kohdc1723/chan-koh/assets/80452136/f5271d24-f51f-44eb-bfce-7b10fe29bf28)
 
 ---
 
