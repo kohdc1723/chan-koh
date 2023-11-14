@@ -40,9 +40,9 @@ jobs:
       - name: Deploy to S3
         run: aws s3 sync build/ s3://chan-koh --delete
         
-      # - name: CloudFront invalidation
-      #   env:
-      #     CLOUD_FRONT_ID: ${{ secrets.AWS_CLOUDFRONT_ID }}
-      #   run: |
-      #     aws cloudfront create-invalidation --distribution-id $CLOUD_FRONT_ID --paths /*
+      - name: CloudFront invalidation
+        env:
+          CLOUD_FRONT_ID: ${{ secrets.AWS_CLOUDFRONT_ID }}
+        run: |
+          aws cloudfront create-invalidation --distribution-id $CLOUD_FRONT_ID --paths /*
                 
