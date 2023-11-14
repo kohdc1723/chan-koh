@@ -2,6 +2,18 @@ import { motion } from "framer-motion";
 import skills from "../constants/skills";
 import "../styles/css/skills.css";
 
+const containerVariants = {
+    hidden: {},
+    visible: {
+        transition: { staggerChildren: 0.02 }
+    }
+};
+
+const skillVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: { opacity: 1, scale: 1 }
+}
+
 const Skills = () => {
     return (
         <section id="Skills" className="section skills">
@@ -18,24 +30,23 @@ const Skills = () => {
                 Skills
             </motion.h2>
             <div className="skills__container">
-                <div className="skills__labels">
-                    {skills?.map((skill, index) => (
+                <motion.div
+                    className="skills__labels"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ amount: 0.5 }}
+                    variants={containerVariants}
+                >
+                    {skills?.map(skill => (
                         <motion.span
                             className="skills__label"
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{ amount: 0.5 }}
-                            transition={{ delay: 0.01 * index, duration: 0.3 }}
-                            variants={{
-                                hidden: { opacity: 0, x: 50 },
-                                visible: { opacity: 1, x: 0 }
-                            }}
+                            variants={skillVariants}
                         >
                             {skill?.icon}
                             <p className="skills__label-title">{skill?.title}</p>
                         </motion.span>
                     ))}
-                </div>
+                </motion.div>
             </div>
         </section>
     );

@@ -1,12 +1,20 @@
 :root {
     --snow: hsla(315, 100%, 99%, 1);
-    --prussian-blue: #0B3954;
+    --prussian-blue: #003153;
+    --gunmetal: #002C3A;
     --smoky-black: #141204;
-    --bittersweet: #FF5154;
-    --forest-green: #4D8B31;
+    --persian-red: #cc3333;
+    --charcoal: #36454F;
     --tea-green: #BFD8BD;
-    --oxford-blue: #1B263B;
+    --cream: #FFFDD0;
+    --gold: #FFD700;
+    --beige: #F5F5DC;
+    --oxford-blue: #002147;
     --midnight-green: #13505B;
     --myrtle-green: #297373;
     --saffron: #F7C548;
+    --deep-coral: #FF6F61;
+    --apricot: #FBB982;
+    --camel: #C19A6B;
+    --light-teal: #80CBC4;
 }

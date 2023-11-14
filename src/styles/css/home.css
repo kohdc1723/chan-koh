@@ -26,7 +26,7 @@
 }
 
 .home__intro-name {
-    color: var(--tea-green);
+    color: var(--light-teal);
     font-weight: bold;
 }
 
@@ -50,6 +50,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 20px;
+    color: var(--cream);
 }
 
 .home__socials svg {
@@ -66,7 +67,7 @@
 
 .home__social-item a {
     text-decoration: none;
-    color: var(--snow);
+    color: var(--cream);
 }
 
 .home__social-item a:hover {
@@ -80,7 +81,6 @@
 .home__img {
     width: 350px;
     height: auto;
-    /* border: 2px solid var(--snow); */
     box-shadow: 20px -20px 5px 0px var(--midnight-green);
 }
 

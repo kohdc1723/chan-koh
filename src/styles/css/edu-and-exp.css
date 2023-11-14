@@ -33,7 +33,7 @@
 }
 
 .edu-and-exp__work {
-    color: var(--tea-green);
+    color: var(--cream);
 }
 
 .edu-and-exp__location {
@@ -55,5 +55,5 @@
     font-style: italic;
     font-size: small;
     font-weight: bold;
-    color: var(--tea-green);
+    color: var(--cream);
 }
