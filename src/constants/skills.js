@@ -1,22 +1,21 @@
-import { SiHtml5, SiCss3, SiTailwindcss, SiBootstrap, SiJavascript, SiJquery, SiNodedotjs, SiReact, SiExpress, SiNextdotjs, SiTypescript, SiRedux, SiRecoil, SiCsharp, SiCplusplus, SiDotnet, SiC, SiPython, SiFirebase, SiGit, SiMongodb, SiMysql, SiMicrosoftsqlserver, SiAmazonaws, SiGithubactions } from "react-icons/si";
+import { SiHtml5, SiCss3, SiTailwindcss, SiJavascript, SiJquery, SiNodedotjs, SiReact, SiExpress, SiNextdotjs, SiTypescript, SiRedux, SiSpring, SiSpringboot, SiCsharp, SiCplusplus, SiDotnet, SiC, SiFirebase, SiGit, SiMongodb, SiMysql, SiMicrosoftsqlserver, SiAmazonaws, SiGithubactions } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 
 const skills = [
     { title: "HTML5", icon: <SiHtml5 /> },
     { title: "CSS3", icon: <SiCss3 /> },
     { title: "TailwindCSS", icon: <SiTailwindcss /> },
-    { title: "Bootstrap", icon: <SiBootstrap /> },
     { title: "JavaScript", icon: <SiJavascript /> },
     { title: "TypeScript", icon: <SiTypescript /> },
     { title: "jQuery", icon: <SiJquery /> },
-    { title: "React", icon: <SiReact /> },
+    { title: "React.js", icon: <SiReact /> },
     { title: "Next.js", icon: <SiNextdotjs /> },
     { title: "Node.js", icon: <SiNodedotjs /> },
-    { title: "Express", icon: <SiExpress /> },
+    { title: "Express.js", icon: <SiExpress /> },
     { title: "Redux", icon: <SiRedux /> },
-    { title: "Recoil", icon: <SiRecoil /> },
     { title: "Java", icon: <FaJava /> },
-    { title: "Python", icon: <SiPython /> },
+    { title: "Spring", icon: <SiSpring /> },
+    { title: "Spring Boot", icon: <SiSpringboot /> },
     { title: "C", icon: <SiC /> },
     { title: "C++", icon: <SiCplusplus /> },
     { title: "C#", icon: <SiCsharp /> },
