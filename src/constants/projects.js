@@ -1,4 +1,4 @@
-import CookingHome from "../images/cooking-home.jpg";
+import CookingHome from "../images/cooking-home.png";
 import DeveloperJourneyMap from "../images/developer-journey-map.jpg";
 import LoveYourPlanet from "../images/love-your-planet.jpg";
 
