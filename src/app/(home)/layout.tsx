@@ -7,7 +7,7 @@ export default function HomeLayout({
     children: ReactNode
 }) {
     return (
-        <div className="flex flex-col lg:flex-row m-0 lg:mx-20 bg-neutral-800">
+        <div className="flex flex-col lg:flex-row m-0 lg:mx-20">
             <Profile />
             {children}
         </div>

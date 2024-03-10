@@ -6,7 +6,7 @@ import Skills from "@/app/(home)/_component/skills";
 
 export default function HomePage() {
     return (
-        <div className="flex-1">
+        <div className="flex flex-col gap-10 flex-1 p-0 lg:py-20">
             <About />
             <Experience />
             <Education />

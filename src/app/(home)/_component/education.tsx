@@ -1,6 +1,6 @@
 export default function Education() {
     return (
-        <section>
+        <section className="h-[100vh] bg-neutral-700">
             Education
         </section>
     );
