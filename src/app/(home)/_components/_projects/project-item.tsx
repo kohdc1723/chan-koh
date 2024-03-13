@@ -32,14 +32,23 @@ export default function ProjectItem({
                 </div>
                 <div className="flex gap-1 flex-wrap">
                     {project.techStack.map(ts => (
-                        <span className="rounded-full font-semibold text-xs py-0.5 px-2 bg-neutral-50 text-neutral-950">
+                        <span
+                            key={ts}
+                            className="rounded-full font-semibold text-xs py-0.5 px-2 bg-neutral-50 text-neutral-950"
+                        >
                             {ts}
                         </span>
                     ))}
                 </div>
                 <div className="flex flex-col gap-1">
                     {project.links?.map(link => (
-                        <a href={link.url} target="_blank" rel="noreferrer" className="text-sm flex items-center gap-1 italic hover:underline w-fit">
+                        <a
+                            key={link.display}
+                            href={link.url}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-sm flex items-center gap-1 italic hover:underline w-fit"
+                        >
                             <link.icon /> {link.display}
                         </a>
                     ))}
