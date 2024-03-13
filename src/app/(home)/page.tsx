@@ -1,12 +1,12 @@
-import About from "@/app/(home)/_component/about";
-import Experience from "@/app/(home)/_component/experience";
-import Education from "@/app/(home)/_component/education";
-import Projects from "@/app/(home)/_component/projects";
-import Skills from "@/app/(home)/_component/skills";
+import About from "@/app/(home)/_components/_about/about";
+import Experience from "@/app/(home)/_components/_experience/experience";
+import Education from "@/app/(home)/_components/_education/education";
+import Projects from "@/app/(home)/_components/_projects/projects";
+import Skills from "@/app/(home)/_components/_skills/skills";
 
 export default function HomePage() {
     return (
-        <div className="flex flex-col gap-10 flex-1 p-0 lg:py-20">
+        <div className="relative flex flex-col flex-1">
             <About />
             <Experience />
             <Education />

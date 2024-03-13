@@ -1,41 +1,41 @@
 import Image from "next/image";
 
-import { ExperienceType } from "@/data/experience";
+import { EducationType } from "@/data/education";
 
-interface ExperienceItemProps {
-    experience: ExperienceType;
+interface EducationTypeProps {
+    education: EducationType;
 };
 
-export default function ExperienceItem({
-    experience
-}: ExperienceItemProps) {
+export default function EducationItem({
+    education
+}: EducationTypeProps) {
     return (
-        <article className="flex gap-5 w-full">
+        <article className="p-5 rounded-md flex gap-5 w-full backdrop-brightness-125 hover:backdrop-brightness-150">
             <Image
-                src={experience.logo}
+                src={education.logo}
                 alt="logo"
-                className="w-20 h-20"
+                className="w-20 h-20 rounded-md"
             />
             <div className="w-full flex flex-col gap-3">
                 <div className="flex justify-between items-center">
                     <h4 className="font-black">
-                        {experience.position}
+                        {education.degree}, {education.program}
                     </h4>
                     <h4 className="text-sm text-right text-neutral-300 font-bold">
-                        {experience.startDate} - {experience.endDate}
+                        {education.startDate} - {education.endDate}
                     </h4>
                 </div>
                 <div className="flex justify-between items-center">
                     <h4 className="font-black">
-                        {experience.company}
+                        {education.school}
                     </h4>
                     <h4 className="text-sm text-right text-neutral-300 font-bold">
-                        {experience.location}
+                        {education.location}
                     </h4>
                 </div>
                 <ul className="text-sm">
-                    {experience.details.map(detail => (
-                        <li>● {detail}</li>
+                    {education.details.map((detail, index) => (
+                        <li key={index}>● {detail}</li>
                     ))}
                 </ul>
             </div>

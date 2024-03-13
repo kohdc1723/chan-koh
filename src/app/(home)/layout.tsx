@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import Profile from "../_components/profile";
+import Profile from "../_components/_profile/profile";
 
 export default function HomeLayout({
     children

@@ -6,6 +6,12 @@ import "./globals.css";
 export const metadata: Metadata = {
     title: "Chan.Koh",
     description: "Chan Koh's portfolio website built with Next.js",
+    icons: [
+        {
+            url: "/logo.ico",
+            href: "/logo.ico"
+        }
+    ]
 };
 
 export default function RootLayout({
