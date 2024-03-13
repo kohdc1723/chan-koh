@@ -1,20 +1,14 @@
 import { create } from "zustand";
 
-enum Section {
-    About = "About",
-    Experience = "Experience",
-    Education = "Education",
-    Projects = "Projects",
-    Skills = "Skills"
-};
+type SectionType = "About" | "Experience" | "Education" | "Projects" | "Skills";
 
 interface SectionStore {
-    section: Section;
-    setSection: (section: Section) => void;
+    section: SectionType;
+    setSection: (section: SectionType) => void;
 };
 
 const useSection = create<SectionStore>(set => ({
-    section: Section.About,
+    section: "About",
     setSection: (section) => set({ section: section })
 }));
 

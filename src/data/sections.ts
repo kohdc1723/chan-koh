@@ -1,42 +1,34 @@
-enum Section {
-    About = "ABOUT",
-    Experience = "EXPERIENCE",
-    Education = "EDUCATION",
-    Projects = "PROJECTS",
-    Skills = "SKILLS"
-};
-
 type SectionType = {
     title: string;
     id: string;
-    value: Section;
+    value: "About" | "Experience" | "Education" | "Projects" | "Skills";
 };
 
 const sections: SectionType[] = [
     {
         title: "About",
         id: "about",
-        value: Section.About
+        value: "About"
     },
     {
         title: "Experience",
         id: "experience",
-        value: Section.Experience
+        value: "Experience"
     },
     {
         title: "Education",
         id: "education",
-        value: Section.Education
+        value: "Education"
     },
     {
         title: "Projects",
         id: "projects",
-        value: Section.Projects
+        value: "Projects"
     },
     {
         title: "Skills",
         id: "skills",
-        value: Section.Skills
+        value: "Skills"
     }
 ];
 
