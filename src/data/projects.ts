@@ -35,13 +35,13 @@ const projects: ProjectType[] = [
         thumbnail: ChanKoh,
         links: [
             {
-                display: "https://trello-clone-kohdc.vercel.app",
-                url: "https://trello-clone-kohdc.vercel.app",
+                display: "https://chankoh.vercel.app",
+                url: "https://chankoh.vercel.app",
                 icon: RiExternalLinkLine
             },
             {
-                display: "github/trello-clone",
-                url: "https://github.com/kohdc1723/trello-clone",
+                display: "github/chan-koh",
+                url: "https://github.com/kohdc1723/chan-koh",
                 icon: SiGithub
             }
         ]
