@@ -32,7 +32,7 @@ export default function EmailButton() {
             <PopoverTrigger>
                 <SiGmail className="w-5 h-5 lg:w-7 lg:h-7 hover:cursor-pointer hover:text-white/75" />
             </PopoverTrigger>
-            <PopoverContent className="flex items-center gap-3 bg-neutral-900 border-none w-fit">
+            <PopoverContent className="flex items-center gap-3 bg-neutral-900 border-none w-fit rounded-lg">
                 <input
                     ref={inputRef}
                     value="kohdc1723@gmail.com"

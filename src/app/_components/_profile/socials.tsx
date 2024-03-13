@@ -1,6 +1,5 @@
-import { SiGithub, SiLinkedin, SiGmail } from "react-icons/si";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import EmailButton from "@/app/_components/_profile/email-button";
 
 export default function Socials() {

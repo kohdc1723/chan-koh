@@ -31,7 +31,7 @@ const projects: ProjectType[] = [
         description: "My portfolio website that presents my information and showcases my projects",
         startDate: "Mar 2024",
         endDate: "Mar 2024",
-        techStack: ["TypeScript", "React", "Tailwind CSS", "Next.js", "Zustand", "Vercel"],
+        techStack: ["TypeScript", "React", "Tailwind CSS", "shadcn/ui", "Next.js", "Zustand", "Vercel"],
         thumbnail: ChanKoh,
         links: [
             {
