@@ -16,8 +16,6 @@ export default function EmailButton() {
     const handleCopy = () => {
         const text = inputRef.current?.value;
 
-        console.log(text)
-
         if (!text) return;
 
         copy(text).then(() => {

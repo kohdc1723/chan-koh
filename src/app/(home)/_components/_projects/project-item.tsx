@@ -10,14 +10,14 @@ export default function ProjectItem({
     project
 }: ProjectItemProps) {
     return (
-        <article className="p-5 rounded-md flex gap-5 w-full backdrop-brightness-125 hover:backdrop-brightness-150">
+        <article className="p-5 rounded-md flex flex-col lg:flex-row justify-center items-center gap-5 w-full backdrop-brightness-125 hover:backdrop-brightness-150">
             <Image
                 src={project.thumbnail}
                 alt="thumbnail"
                 className="w-60 h-60 rounded-md"
             />
-            <div className="w-full flex flex-col gap-3">
-                <div className="flex flex-col gap-3 justify-center items-center">
+            <div className="w-full h-full flex flex-col gap-3">
+                <div className="flex flex-col gap-3">
                     <div className="flex justify-between items-center w-full">
                         <h4 className="font-black">
                             {project.title}
@@ -30,7 +30,7 @@ export default function ProjectItem({
                         {project.description}
                     </p>
                 </div>
-                <div className="flex gap-1 flex-wrap">
+                <div className="flex gap-1 flex-wrap justify-left">
                     {project.techStack.map(ts => (
                         <span
                             key={ts}

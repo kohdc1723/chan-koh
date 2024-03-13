@@ -14,14 +14,14 @@ export default function ExperienceItem({
             <Image
                 src={experience.logo}
                 alt="logo"
-                className="w-20 h-20 rounded-md"
+                className="w-20 h-20 rounded-md hidden lg:block"
             />
             <div className="w-full flex flex-col gap-3">
                 <div className="flex justify-between items-center">
                     <h4 className="font-black">
                         {experience.position}
                     </h4>
-                    <h4 className="text-sm text-right text-neutral-300 font-bold">
+                    <h4 className="text-sm text-neutral-300 font-bold">
                         {experience.startDate} - {experience.endDate}
                     </h4>
                 </div>
@@ -29,7 +29,7 @@ export default function ExperienceItem({
                     <h4 className="font-black">
                         {experience.company}
                     </h4>
-                    <h4 className="text-sm text-right text-neutral-300 font-bold">
+                    <h4 className="text-sm text-neutral-300 font-bold">
                         {experience.location}
                     </h4>
                 </div>
