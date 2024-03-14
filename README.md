@@ -84,3 +84,19 @@ Chan.Koh is my portfolio website where I present my information and showcase my 
     ├── tsconfig.json
     ├── .gitignore
     └── README.md
+
+# Screenshots
+- About Section
+<img width="1422" alt="image" src="https://github.com/kohdc1723/chan-koh/assets/80452136/ce6da398-1f62-45ee-aa2e-be674ef2f70b">
+
+- Experience Section
+<img width="1422" alt="image" src="https://github.com/kohdc1723/chan-koh/assets/80452136/d3a33676-0cf0-4ae7-9d96-6da4340c9bac">
+
+- Education Section
+<img width="1422" alt="image" src="https://github.com/kohdc1723/chan-koh/assets/80452136/698f93a7-07db-4c56-b5bf-88c4f975b650">
+
+- Projects Section
+<img width="1422" alt="image" src="https://github.com/kohdc1723/chan-koh/assets/80452136/e93fd3d0-8c70-4594-b1be-8732c7e63bdb">
+
+- Skills Section
+<img width="1422" alt="image" src="https://github.com/kohdc1723/chan-koh/assets/80452136/d5d89444-46d0-47f8-bb1c-2464930ad217">
