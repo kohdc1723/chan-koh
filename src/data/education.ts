@@ -23,6 +23,7 @@ const education: EducationType[] = [
         startDate: "Sep 2021",
         endDate: "Jun 2023",
         details: [
+            "Information Systems option",
             "Graduated with distinction"
         ]
     }

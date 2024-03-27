@@ -10,29 +10,34 @@ export default function ExperienceItem({
     experience
 }: ExperienceItemProps) {
     return (
-        <article className="p-5 rounded-md flex gap-5 w-full backdrop-brightness-125 hover:backdrop-brightness-150">
-            <Image
-                src={experience.logo}
-                alt="logo"
-                className="w-20 h-20 rounded-md hidden lg:block"
-            />
+        <article className="p-5 rounded-md flex flex-col gap-5 w-full backdrop-brightness-125 hover:backdrop-brightness-150">
+            <div className="flex gap-5 justify-between items-start">
+                <Image
+                    src={experience.logo}
+                    alt="logo"
+                    className="w-20 h-20 rounded-md"
+                />
+
+                <div className="h-full flex flex-col gap-1 flex-1 font-black">
+                    <div className="flex flex-col">
+                        <h4 className="text-left text-sm lg:text-base self-start">
+                            {experience.position}
+                        </h4>
+                        <h4 className="text-right text-neutral-400 self-end text-xs lg:text-sm">
+                            {experience.startDate} - {experience.endDate}
+                        </h4>
+                    </div>
+                    <div className="flex flex-col">
+                        <h4 className="text-left text-sm lg:text-base self-start">
+                            {experience.company}
+                        </h4>
+                        <h4 className="text-right text-neutral-400 self-end text-xs lg:text-sm">
+                            {experience.location}
+                        </h4>
+                    </div>
+                </div>
+            </div>
             <div className="w-full flex flex-col gap-3">
-                <div className="flex justify-between items-center">
-                    <h4 className="font-black">
-                        {experience.position}
-                    </h4>
-                    <h4 className="text-sm text-neutral-300 font-bold">
-                        {experience.startDate} - {experience.endDate}
-                    </h4>
-                </div>
-                <div className="flex justify-between items-center">
-                    <h4 className="font-black">
-                        {experience.company}
-                    </h4>
-                    <h4 className="text-sm text-neutral-300 font-bold">
-                        {experience.location}
-                    </h4>
-                </div>
                 <ul className="text-sm">
                     {experience.details.map((detail, index) => (
                         <li key={index}>● {detail}</li>

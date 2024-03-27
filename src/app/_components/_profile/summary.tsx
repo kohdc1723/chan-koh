@@ -10,9 +10,9 @@ export default function Summary() {
                 src={ProfileImage}
                 alt="profile"
                 priority
-                className="w-32 h-32 lg:w-36 lg:h-36 rounded-full"
+                className="w-24 h-24 md:w-28 md:h-28 lg:w-36 lg:h-36 rounded-full"
             />
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-3 lg:gap-5">
                 <div className="flex flex-col gap-1">
                     <h1 className="text-2xl lg:text-3xl font-black">Dong-chan Koh</h1>
                     <h2 className="text-base lg:text-lg font-bold">Software Developer</h2>

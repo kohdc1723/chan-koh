@@ -19,10 +19,10 @@ export default function ProjectItem({
             <div className="w-full h-full flex flex-col gap-3">
                 <div className="flex flex-col gap-3">
                     <div className="flex justify-between items-center w-full">
-                        <h4 className="font-black">
+                        <h4 className="text-left font-black">
                             {project.title}
                         </h4>
-                        <p className="text-sm text-neutral-300 font-bold">
+                        <p className="text-right text-sm text-neutral-300 font-bold">
                             {project.startDate} - {project.endDate}
                         </p>
                     </div>
