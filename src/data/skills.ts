@@ -20,9 +20,9 @@ const skills: SkillDataType[] = [
         skills: [
             { skill: "HTML5", logo: SiHtml5, bgColor: "#E34F26", textColor: "#FFFFFF" },
             { skill: "CSS3", logo: SiCss3, bgColor: "#1572B6", textColor: "#FFFFFF" },
-            { skill: "JavaScript", logo: SiJavascript, bgColor: "#F7DF1E", textColor: "#000000" },
+            { skill: "JavaScript", logo: SiJavascript, bgColor: "#FFC300", textColor: "#FFFFFF" },
             { skill: "TypeScript", logo: SiTypescript, bgColor: "#3178C6", textColor: "#FFFFFF" },
-            { skill: "C", logo: SiC, bgColor: "#A8B9CC", textColor: "#000000" },
+            { skill: "C", logo: SiC, bgColor: "#A8B9CC", textColor: "#FFFFFF" },
             { skill: "C++", logo: SiCplusplus, bgColor: "#00599C", textColor: "#FFFFFF" },
             { skill: "C#", logo: SiCsharp, bgColor: "#512BD4", textColor: "#FFFFFF" },
             { skill: "Java", logo: FaJava, bgColor: "#5382A1", textColor: "#FFFFFF" }
@@ -31,10 +31,9 @@ const skills: SkillDataType[] = [
     {
         category: "Front-End",
         skills: [
-            { skill: "React", logo: SiReact, bgColor: "#61DAFB", textColor: "#000000" },
+            { skill: "React", logo: SiReact, bgColor: "#06B6D4", textColor: "#FFFFFF" },
             { skill: "Next.js", logo: SiNextdotjs, bgColor: "#000000", textColor: "#FFFFFF" },
             { skill: "Redux", logo: SiRedux, bgColor: "#764ABC", textColor: "#FFFFFF" },
-            { skill: "RTK Query", logo: SiRedux, bgColor: "#764ABC", textColor: "#FFFFFF" },
             { skill: "Zustand", bgColor: "#5382A1", textColor: "#FFFFFF" },
             { skill: "Tanstack React Query", logo: SiReactquery, bgColor: "#FF4154", textColor: "#FFFFFF" },
             { skill: "shadcn/ui", bgColor: "#000000", textColor: "#FFFFFF" },
@@ -50,7 +49,7 @@ const skills: SkillDataType[] = [
             { skill: "Nest.js", logo: SiNestjs, bgColor: "#E0234E", textColor: "#FFFFFF" },
             { skill: "Spring Boot", logo: SiSpringboot, bgColor: "#6DB33F", textColor: "#FFFFFF" },
             { skill: "ASP.NET Core", logo: SiDotnet, bgColor: "#512BD4", textColor: "#FFFFFF" },
-            { skill: "Firebase", logo: SiFirebase, bgColor: "#FFCA28", textColor: "#000000" }
+            { skill: "Firebase", logo: SiFirebase, bgColor: "#FFC300", textColor: "#FFFFFF" }
         ]
     },
     {
@@ -69,7 +68,6 @@ const skills: SkillDataType[] = [
         skills: [
             { skill: "Git", logo: SiGit, bgColor: "#F05032", textColor: "#FFFFFF" },
             { skill: "Github Actions", logo: SiGithubactions, bgColor: "#2088FF", textColor: "#FFFFFF" },
-            { skill: "CI/CD", bgColor: "#5382A1", textColor: "#FFFFFF" },
             { skill: "Amazon EC2", logo: SiAmazonec2, bgColor: "#FF9900", textColor: "#FFFFFF" },
             { skill: "Amazon S3", logo: SiAmazons3, bgColor: "#569A31", textColor: "#FFFFFF" },
             { skill: "Amazon CloudFront", logo: SiAmazonaws, bgColor: "#FF9900", textColor: "#FFFFFF" },
