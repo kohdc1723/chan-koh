@@ -2,6 +2,7 @@ import { StaticImageData } from "next/image";
 
 import LYPF from "@/../public/lypf.jpeg";
 import DevRel from "@/../public/devrel.jpeg";
+import TOrder from "@/../public/torder.jpg";
 
 export type ExperienceType = {
     company: string;
@@ -17,6 +18,26 @@ export type ExperienceType = {
 };
 
 const experience: ExperienceType[] = [
+    {
+        company: "t'order",
+        logo: TOrder,
+        position: "Jr. IT Support Technician",
+        type: "Permanent, Full-time",
+        location: "Vancouver, BC, Canada (On-site)",
+        startDate: "Apr 2024",
+        endDate: "Present",
+        details: [],
+        techStack: [
+            "JavaScript",
+            "React Native",
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "Redux",
+            "Firebase",
+            "Heroku"
+        ]
+    },
     {
         company: "Love Your Planet Foundation",
         logo: LYPF,
