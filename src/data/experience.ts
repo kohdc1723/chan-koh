@@ -19,26 +19,6 @@ export type ExperienceType = {
 
 const experience: ExperienceType[] = [
     {
-        company: "t'order",
-        logo: TOrder,
-        position: "Jr. IT Support Technician",
-        type: "Permanent, Full-time",
-        location: "Vancouver, BC, Canada (On-site)",
-        startDate: "Apr 2024",
-        endDate: "Present",
-        details: [],
-        techStack: [
-            "JavaScript",
-            "React Native",
-            "Node.js",
-            "Express",
-            "MongoDB",
-            "Redux",
-            "Firebase",
-            "Heroku"
-        ]
-    },
-    {
         company: "Love Your Planet Foundation",
         logo: LYPF,
         position: "Software Developer, Co-op",
@@ -48,10 +28,10 @@ const experience: ExperienceType[] = [
         endDate: "May 2023",
         details: [
             "BCIT ISSP (Industry Sponsored Student Project) program",
-            "Developed a Love Your Planet Mobile App, an easy-to-use social media for sustainability",
-            "Modified the UI based on the client requirements",
-            "Implemented a bill tracking feature that allows users to search for environmental bills and track their progress",
-            "Debugged the existing issues in the register and login processes"
+            "Contributed to the Love Your Planet's project, developing an easy-to-use mobile social media for sustainability",
+            "Implemented a bill tracker enabling users to search for environmental bills and track their progress",
+            "Modified about 50% of UI components to meet HIG (Human Interface Guidelines) in preparation for App Store release",
+            "Debugged existing issues, resulting in the resolution of 60% of the bugs"
         ],
         techStack: [
             "JavaScript",
@@ -75,10 +55,10 @@ const experience: ExperienceType[] = [
         endDate: "Apr 2023",
         details: [
             "BCIT ISSP (Industry Sponsored Student Project) program",
-            "Developed a Developer Journey Map, a visualization tool identifies the path the developer experiences",
-            "Developed a RESTful API using Express framework and MongoDB",
-            "Designed the UI and implemented it using React library",
-            "Deployed the service on Google Cloud"
+            "Collaborated with a team of five to develop the full-stack web application \"Developer Journey Map\" from scratch",
+            "Developed a RESTful API using Express.js and MongoDB for backend functionality",
+            "Implemented Google account authentication with Firebase, simplifying the signup and login process",
+            "Successfully deployed the application on Google Cloud Platform, ensuring the service operates smoothly"
         ],
         techStack: [
             "JavaScript",

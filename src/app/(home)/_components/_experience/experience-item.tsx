@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Badge } from "@/components/ui/badge";
 
 import { ExperienceType } from "@/data/experience";
 
@@ -40,9 +41,25 @@ export default function ExperienceItem({
             <div className="w-full flex flex-col gap-3">
                 <ul className="text-sm">
                     {experience.details.map((detail, index) => (
-                        <li key={index}>● {detail}</li>
+                        <li
+                            key={index}
+                            className="flex gap-1"
+                        >
+                            <span>●</span>
+                            <p>{detail}</p>
+                        </li>
                     ))}
                 </ul>
+            </div>
+            <div className="w-full flex gap-1 flex-wrap">
+                {experience.techStack.map(ts => (
+                    <span
+                        key={ts}
+                        className="rounded-full font-semibold text-xs py-0.5 px-2 bg-neutral-50 text-neutral-950"
+                    >
+                        {ts}
+                    </span>
+                ))}
             </div>
         </article>
     );
