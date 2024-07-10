@@ -111,7 +111,7 @@ const experience: ExperienceType[] = [
         ],
         techStack: [
             "JavaScript",
-            "React.js",
+            "React",
             "Node.js",
             "Express",
             "MongoDB",

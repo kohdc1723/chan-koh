@@ -1,7 +1,8 @@
+import Link from "next/link";
 import Image from "next/image";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 import { ExperienceType } from "@/data/experience";
-import Link from "next/link";
 
 interface ExperienceItemProps {
     experience: ExperienceType;
@@ -34,9 +35,10 @@ export default function ExperienceItem({
                                 href={experience.websiteUrl}
                                 target="_blank"
                                 rel="noreferrer"
-                                className="hover:text-white/75"
+                                className="underline flex items-center gap-1 hover:text-white/75"
                             >
                                 {experience.company}
+                                <FaExternalLinkAlt className="text-sm" />
                             </Link>
                         </h4>
                         <h4 className="text-right text-neutral-400 self-end text-xs lg:text-sm">
