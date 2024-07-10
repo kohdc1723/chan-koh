@@ -25,7 +25,7 @@ const experience: ExperienceType[] = [
         position: "Full-stack Developer",
         type: "Permanent, Full-time",
         location: "Vancouver, BC, Canada (Hybrid)",
-        startDate: "Jul 2023",
+        startDate: "Jul 2024",
         endDate: "Present",
         details: [],
         techStack: [
@@ -45,8 +45,8 @@ const experience: ExperienceType[] = [
         position: "Junior IT Technician",
         type: "Contract, Full-time",
         location: "Vancouver, BC, Canada (On-site)",
-        startDate: "Apr 2023",
-        endDate: "Jul 2023",
+        startDate: "Apr 2024",
+        endDate: "Jul 2024",
         details: [
             "Integrated t'order software with clients' POS systems to ensure tablet orders are linked to their POS systems",
             "Trobleshot issues regarding POS systems and t'order systems reported by clients",
