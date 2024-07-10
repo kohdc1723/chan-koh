@@ -3,6 +3,7 @@ import { StaticImageData } from "next/image";
 import LYPF from "@/../public/lypf.jpeg";
 import DevRel from "@/../public/devrel.jpeg";
 import TOrder from "@/../public/torder.jpg";
+import VisaFlo from "@/../public/visaflo-logo.png";
 
 export type ExperienceType = {
     company: string;
@@ -18,6 +19,26 @@ export type ExperienceType = {
 };
 
 const experience: ExperienceType[] = [
+    {
+        company: "VisaFlo",
+        logo: VisaFlo,
+        position: "Full-stack Developer",
+        type: "Permanent, Full-time",
+        location: "Vancouver, BC, Canada (Hybrid)",
+        startDate: "Jul 2023",
+        endDate: "Present",
+        details: [],
+        techStack: [
+            "JavaScript",
+            "TypeScript",
+            "Python",
+            "React",
+            "Node.js",
+            "Express.js",
+            "Firebase",
+            "Tailwind CSS"
+        ]
+    },
     {
         company: "t'order Canada",
         logo: TOrder,
