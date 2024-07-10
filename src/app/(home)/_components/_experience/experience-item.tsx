@@ -15,7 +15,7 @@ export default function ExperienceItem({
                 <Image
                     src={experience.logo}
                     alt="logo"
-                    className="w-20 h-20 rounded-md"
+                    className="w-20 h-20 rounded-md bg-white"
                 />
 
                 <div className="h-full flex flex-col gap-1 flex-1 font-black">
