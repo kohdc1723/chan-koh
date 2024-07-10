@@ -22,7 +22,7 @@ const experience: ExperienceType[] = [
     {
         company: "VisaFlo",
         logo: VisaFlo,
-        position: "Full-stack Developer",
+        position: "Full-Stack Developer",
         type: "Permanent, Full-time",
         location: "Vancouver, BC, Canada (Hybrid)",
         startDate: "Jul 2024",
