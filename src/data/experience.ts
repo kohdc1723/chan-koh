@@ -19,6 +19,30 @@ export type ExperienceType = {
 
 const experience: ExperienceType[] = [
     {
+        company: "t'order Canada",
+        logo: TOrder,
+        position: "Junior IT Technician",
+        type: "Contract, Full-time",
+        location: "Vancouver, BC, Canada (On-site)",
+        startDate: "Apr 2023",
+        endDate: "Jul 2023",
+        details: [
+            "Integrated t'order software with clients' POS systems to ensure tablet orders are linked to their POS systems",
+            "Trobleshot issues regarding POS systems and t'order systems reported by clients",
+            "Provided remote technical support for clients' requests using Anydesk and TeamViewer",
+            "Installed and configured printers and network routers",
+        ],
+        techStack: [
+            "Networking",
+            "Troubleshooting",
+            "Problem Solving",
+            "Technical Support",
+            "POS systems",
+            "Anydesk",
+            "TeamViewer"
+        ]
+    },
+    {
         company: "Love Your Planet Foundation",
         logo: LYPF,
         position: "Software Developer, Co-op",
