@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { ExperienceType } from "@/data/experience";
+import Link from "next/link";
 
 interface ExperienceItemProps {
     experience: ExperienceType;
@@ -29,7 +30,14 @@ export default function ExperienceItem({
                     </div>
                     <div className="flex flex-col">
                         <h4 className="text-left text-sm lg:text-base self-start">
-                            {experience.company}
+                            <Link
+                                href={experience.websiteUrl}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="hover:text-white/75"
+                            >
+                                {experience.company}
+                            </Link>
                         </h4>
                         <h4 className="text-right text-neutral-400 self-end text-xs lg:text-sm">
                             {experience.location}

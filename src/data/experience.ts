@@ -16,6 +16,7 @@ export type ExperienceType = {
     details: string[];
     techStack: string[];
     projectUrl?: string;
+    websiteUrl: string;
 };
 
 const experience: ExperienceType[] = [
@@ -37,10 +38,11 @@ const experience: ExperienceType[] = [
             "Express.js",
             "Firebase",
             "Tailwind CSS"
-        ]
+        ],
+        websiteUrl: "https://vflo.app"
     },
     {
-        company: "t'order Canada",
+        company: "t'order",
         logo: TOrder,
         position: "Junior IT Technician",
         type: "Contract, Full-time",
@@ -61,7 +63,8 @@ const experience: ExperienceType[] = [
             "POS systems",
             "Anydesk",
             "TeamViewer"
-        ]
+        ],
+        websiteUrl: "https://global.torder.com/main"
     },
     {
         company: "Love Your Planet Foundation",
@@ -88,7 +91,8 @@ const experience: ExperienceType[] = [
             "Firebase",
             "Heroku"
         ],
-        projectUrl: "https://stump-clavicle-74d.notion.site/Love-Your-Planet-Mobile-App-b6db8484bdb84548991dc0b169ebf4a7"
+        projectUrl: "https://stump-clavicle-74d.notion.site/Love-Your-Planet-Mobile-App-b6db8484bdb84548991dc0b169ebf4a7",
+        websiteUrl: "https://www.loveyourplanet.earth"
     },
     {
         company: "DevRel.Agency",
@@ -115,7 +119,8 @@ const experience: ExperienceType[] = [
             "Firebase",
             "Google Cloud"
         ],
-        projectUrl: "https://stump-clavicle-74d.notion.site/Developer-Journey-Map-1811046303934666abf5cff0bd9f84e5"
+        projectUrl: "https://stump-clavicle-74d.notion.site/Developer-Journey-Map-1811046303934666abf5cff0bd9f84e5",
+        websiteUrl: "https://www.devrel.agency"
     }
 ];
 
