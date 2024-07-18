@@ -50,8 +50,8 @@ const experience: ExperienceType[] = [
         startDate: "Apr 2024",
         endDate: "Jul 2024",
         details: [
-            "Integrated t'order software with clients' POS systems to ensure tablet orders are linked to their POS systems",
-            "Trobleshot issues regarding POS systems and t'order systems reported by clients",
+            "Integrated tablet ordering software with clients' POS systems to ensure tablet orders are linked to their POS systems",
+            "Troubleshot issues regarding POS systems and tablet ordering systems reported by clients",
             "Provided remote technical support for clients' requests using Anydesk and TeamViewer",
             "Installed and configured printers and network routers",
         ],
