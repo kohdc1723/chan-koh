@@ -21,9 +21,9 @@ export type ExperienceType = {
 
 const experience: ExperienceType[] = [
     {
-        company: "VisaFlo",
+        company: "Visaflo",
         logo: VisaFlo,
-        position: "Full-Stack Developer",
+        position: "Full-stack Developer",
         type: "Permanent, Full-time",
         location: "Vancouver, BC, Canada (Hybrid)",
         startDate: "Jul 2024",
@@ -31,8 +31,6 @@ const experience: ExperienceType[] = [
         details: [],
         techStack: [
             "JavaScript",
-            "TypeScript",
-            "Python",
             "React",
             "Node.js",
             "Express.js",
