@@ -25,17 +25,20 @@ const experience: ExperienceType[] = [
         logo: VisaFlo,
         position: "Full-stack Developer",
         type: "Permanent, Full-time",
-        location: "Vancouver, BC, Canada (Hybrid)",
+        location: "Coquitlam, BC, Canada (Hybrid)",
         startDate: "Jul 2024",
         endDate: "Present",
         details: [],
         techStack: [
             "JavaScript",
+            "TypeScript",
             "React",
             "Node.js",
             "Express.js",
             "Firebase",
-            "Tailwind CSS"
+            "Redux",
+            "Tailwind CSS",
+            "Jira"
         ],
         websiteUrl: "https://vflo.app"
     },
