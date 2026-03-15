@@ -6,7 +6,10 @@ import { education } from "@/data/education";
 
 export default function Education() {
   return (
-    <Card>
+    <Card
+      id="education"
+      className="ring-0"
+    >
       <CardHeader>
         <CardTitle className="text-xl font-bold">
           Education
@@ -14,12 +17,15 @@ export default function Education() {
       </CardHeader>
       <CardContent className="flex flex-col gap-4">
         {education.map((edu, index) => (
-          <Card key={index}>
+          <Card
+            key={index}
+            className="ring-0 rounded-none border-b"
+          >
             <CardHeader className="flex items-center gap-4">
               <Image
                 src={edu.logo}
                 alt={edu.school}
-                className="size-20 rounded-md ring-2 ring-accent"
+                className="size-20 rounded-md ring-2 ring-accent grayscale-50"
               />
               <div className="flex flex-col gap-1 w-full">
                 <CardTitle className="flex flex-col">
@@ -28,7 +34,7 @@ export default function Education() {
                     {edu.degree}, {edu.fieldOfStudy}
                   </p>
                 </CardTitle>
-                <CardDescription className="text-sm font-medium flex flex-col">
+                <CardDescription className="font-medium flex flex-col">
                   <p>{edu.location}</p>
                   <p>{edu.period}</p>
                 </CardDescription>

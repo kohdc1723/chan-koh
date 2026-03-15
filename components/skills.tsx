@@ -5,7 +5,10 @@ import { skills } from "@/data/skills";
 
 export default function Skills() {
   return (
-    <Card>
+    <Card
+      id="skills"
+      className="ring-0"
+    >
       <CardHeader>
         <CardTitle className="text-xl font-bold">
           Skills
@@ -13,7 +16,10 @@ export default function Skills() {
       </CardHeader>
       <CardContent className="flex flex-col gap-4">
         {skills.map((item, index) => (
-          <Card key={index}>
+          <Card
+            key={index}
+            className="ring-0 rounded-none border-b"
+          >
             <CardHeader>
               <CardTitle className="font-semibold">
                 {item.category}

@@ -1,7 +1,7 @@
-import visaflo from "@/public/visaflo.jpeg";
-import torder from "@/public/torder.jpg";
-import lypf from "@/public/lypf.jpeg";
-import devrel from "@/public/devrel.jpeg";
+import visaflo from "@/public/visaflo.png";
+import torder from "@/public/torder.png";
+import lyp from "@/public/lyp.png";
+import devrel from "@/public/devrel.png";
 
 export const experience = [
   {
@@ -42,7 +42,7 @@ export const experience = [
     location: "Chilliwack, BC",
     locationType: "Remote",
     period: "04/2023 - 05/2023",
-    logo: lypf,
+    logo: lyp,
     description: [
       "Built a social media app promoting sustainable living and environmental awareness using React Native",
       "Implemented an environmental bill tracker feature using LEGISinfo API to monitor the progress of environmental legislation",
