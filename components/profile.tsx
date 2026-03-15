@@ -17,10 +17,10 @@ export default function Profile() {
       />
       <div className="flex flex-col gap-2">
         <div className="flex flex-col gap-1">
-          <h1 className="text-2xl font-bold">
+          <h1 className="text-xl lg:text-2xl font-bold">
             Chan Koh
           </h1>
-          <div className="flex flex-col font-medium">
+          <div className="flex flex-col font-medium text-sm lg:text-base">
             <p>
               Full Stack Developer @ VisaFlo
             </p>

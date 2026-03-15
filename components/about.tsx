@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Separator } from "@/components/ui/separator";
 
 export default function About() {
   return (
@@ -11,8 +12,8 @@ export default function About() {
           About
         </CardTitle>
       </CardHeader>
-      <CardContent className="flex flex-col gap-1">
-        <Card className="rounded-none ring-0 border-b">
+      <CardContent className="flex flex-col gap-4">
+        <Card className="rounded-none ring-0">
           <CardHeader>
             <CardTitle>
               Hi, my name is Chan Koh.
@@ -23,6 +24,7 @@ export default function About() {
             <p>I'm looking for new challenges and opportunities to grow as a developer.</p>
           </CardContent>
         </Card>
+        <Separator />
       </CardContent>
     </Card>
   );
