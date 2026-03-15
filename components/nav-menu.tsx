@@ -1,16 +1,12 @@
 "use client";
 
-import { useState } from "react";
 import { Link } from "react-scroll";
-import { MousePointer2 } from "lucide-react";
 
 import { Section } from "@/constants/section";
 
 const sections = Object.values(Section);
 
 export default function NavMenu() {
-  const [currentSection, setCurrentSection] = useState<Section | null>(null);
-
   return (
     <nav className="hidden lg:block">
       <ul className="flex flex-col gap-2">
@@ -22,15 +18,9 @@ export default function NavMenu() {
               duration={500}
               smooth={true}
               spy={true}
-              onSetActive={() => setCurrentSection(section)}
-              className="flex gap-4 items-center w-fit hover:cursor-pointer"
+              className="flex gap-4 items-center w-fit hover:cursor-pointer capitalize"
             >
-              <span className="capitalize">
-                {section}
-              </span>
-              {section === currentSection && (
-                <MousePointer2 className="size-4" />
-              )}
+              {section}
             </Link>
           </li>
         ))}

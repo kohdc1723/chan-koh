@@ -1,6 +1,8 @@
 import { Card, CardHeader, CardContent, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { projects } from "@/data/projects";
+import { FaGithub, FaLink } from "react-icons/fa6";
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -36,6 +38,30 @@ export default function Projects() {
                   >
                     <span>•</span>
                     <p>{desc}</p>
+                  </li>
+                ))}
+              </ul>
+              <ul className="flex flex-col gap-1">
+                {project.links.map((link, index) => (
+                  <li
+                    key={index}
+                    className="flex gap-2 items-center"
+                  >
+                    <span>
+                      {link.type === "github" ? (
+                        <FaGithub className="size-4" />
+                      ) : (
+                        <FaLink className="size-4" />
+                      )}
+                    </span>
+                    <Link
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline"
+                    >
+                      {link.label}
+                    </Link>
                   </li>
                 ))}
               </ul>

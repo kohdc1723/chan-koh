@@ -41,6 +41,11 @@ export const projects = [
     ],
     links: [
       {
+        type: "live",
+        label: "live/chankoh",
+        url: "https://chankoh.vercel.app",
+      },
+      {
         type: "github",
         label: "github/chan-koh",
         url: "https://github.com/kohdc1723/chan-koh",
