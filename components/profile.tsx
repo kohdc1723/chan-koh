@@ -12,6 +12,7 @@ export default function Profile() {
       <Image
         src={profile}
         alt="profile"
+        priority
         className="rounded-full size-32 md:size-36 lg:size-40 ring-2 ring-accent-foreground"
       />
       <div className="flex flex-col gap-2">
