@@ -34,7 +34,7 @@ export default function Skills() {
                       variant="outline"
                       className="h-6 text-xs font-medium py-1 px-2 rounded-md flex items-center gap-2"
                     >
-                      <skill.icon className="size-4 shrink-0" />
+                      {skill.icon && <skill.icon className="size-4 shrink-0" />}
                       {skill.name}
                     </Badge>
                   ))}

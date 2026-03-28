@@ -15,7 +15,9 @@ import {
   SiMysql,
   SiHibernate,
   SiMongodb,
-  SiPrisma
+  SiPrisma,
+  SiGithub,
+  SiGithubactions
 } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
 import { IoLogoFirebase } from "react-icons/io5";
@@ -53,7 +55,7 @@ export const skills = [
     ]
   },
   {
-    category: "Database",
+    category: "Databases",
     skills: [
       { name: "PostgreSQL", icon: BiLogoPostgresql },
       { name: "MySQL", icon: SiMysql },
@@ -64,8 +66,11 @@ export const skills = [
     ]
   },
   {
-    category: "Infrastructure",
+    category: "DevOps & Infrastructure",
     skills: [
+      { name: "Git", icon: SiGit },
+      { name: "GitHub", icon: SiGithub },
+      { name: "GitHub Actions", icon: SiGithubactions },
       { name: "AWS", icon: FaAws },
       { name: "Docker", icon: SiDocker },
     ]
@@ -73,8 +78,8 @@ export const skills = [
   {
     category: "AI & Tools",
     skills: [
-      { name: "Git", icon: SiGit },
       { name: "Claude Code", icon: SiClaude },
+      { name: "Cursor", icon: null },
     ]
   }
 ] as const;
