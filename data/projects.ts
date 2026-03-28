@@ -15,6 +15,11 @@ export const projects = [
     ],
     links: [
       {
+        type: "live",
+        label: "live/spring-log",
+        url: "https://spring-log.vercel.app",
+      },
+      {
         type: "github",
         label: "github/spring-log-frontend",
         url: "https://github.com/kohdc1723/spring-log-frontend",

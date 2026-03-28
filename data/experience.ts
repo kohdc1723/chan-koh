@@ -13,11 +13,12 @@ export const experience = [
     period: "07/2024 - Present",
     logo: visaflo,
     description: [
-      "Lead the development of the Chrome Extension for IRCC Online Form Autofill using Plasmo; overhauling the autofill engine by replacing legacy DOM manipulation with API injection, achieving 20x performance boost (from 8 minutes to under 25 seconds)",
-      "Develop and enhance an AI-powered document scanner using Google Vision OCR and OpenAI Function Calling, reducing manual data entry time by over 50% through automated data extraction and form field mapping",
-      "Automated an Nginx reverse proxy pipeline on AWS Lightsail to provide white-label solutions, currently utilized by 40+ client firms",
-      "Develop and maintain a CRM dashboard (React, Node.js, Express.js, Firebase) supporting 80+ immigration firms and 280+ active users, streamlining client and lead management and case workflows",
-      "Scale the system and iteratively enhance features based on client feedback, driving 40x growth in B2B clients (from 2 to 80+ firms)",
+      "Drive 40x growth in B2B clients from 2 to 80+ firms through iterative feature development and enhancement based on client feedback, scaling the system alongside increasing demand",
+      "Achieve 20x performance boost from 8 minutes to under 25 seconds in IRCC online form autofill, overhauling the autofill engine from legacy DOM manipulation to API injection",
+      "Enable scalable white-label solutions serving 40+ client firms, implementing an Nginx reverse proxy on AWS Lightsail",
+      "Reduce manual data entry time by 50%+ across all case workflows, building an AI-powered document scanner with Google Vision OCR and OpenAI Function Calling",
+      "Automate IRCC PDF form filling with a dynamic XFA PDF generation pipeline by scripting Adobe Acrobat using Python on Windows Server",
+      "Develop and maintain a CRM dashboard using React and Express.js, providing 80+ immigration firms and 280+ employees with streamlined client, lead, and case management workflows",
     ]
   },
   {
@@ -45,7 +46,7 @@ export const experience = [
     logo: lyp,
     description: [
       "Built a social media app promoting sustainable living and environmental awareness using React Native",
-      "Implemented an environmental bill tracker feature using LEGISinfo API to monitor the progress of environmental legislation",
+      "Integrated the LEGISinfo API to develop a bill tracker for monitoring the progress of environmental legislation",
       "Resolved a backlog of 4 critical UI bugs and refactored UI components to align with HIG for the App Store release"
     ]
   },
@@ -58,7 +59,8 @@ export const experience = [
     period: "01/2023 - 04/2023",
     logo: devrel,
     description: [
-      "Developed a Trello-style dashboard application, Developer Journey Map, using React, Node.js, Express.js, and MongoDB",
+      "Built a Trello-style dashboard app \"Developer Journey Map\" using React to visualize and manage developer experience stages from discovery to adoption",
+      "Developed RESTful APIs using Express.js and MongoDB to support backend functionality",
       "Deployed and configured the application on Google Cloud Platform"
     ]
   },
