@@ -21,7 +21,7 @@ export default function About() {
           </CardHeader>
           <CardContent>
             <p>I'm currently working as a Software Engineer at VisaFlo, building B2B SaaS solutions for immigration professionals.</p>
-            <p>I'm looking for new challenges and opportunities to grow as a developer.</p>
+            <p>I'm looking for new challenges and opportunities to grow as an engineer.</p>
           </CardContent>
         </Card>
         <Separator />
