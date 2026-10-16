@@ -22,7 +22,7 @@ export default function Profile() {
           </h1>
           <div className="flex flex-col font-medium text-sm lg:text-base">
             <p>
-              Full Stack Developer @ VisaFlo
+              Software Engineer @ VisaFlo
             </p>
             <p>
               CST @ BCIT

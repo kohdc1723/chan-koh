@@ -5,20 +5,21 @@ import devrel from "@/public/devrel.png";
 
 export const experience = [
   {
-    position: "Full Stack Developer",
+    position: "Software Engineer",
     employmentType: "Permanent Full-Time",
     company: "VisaFlo",
     location: "Vancouver, BC",
     locationType: "Hybrid",
     period: "07/2024 - Present",
     logo: visaflo,
+    logoFill: true,
+    logoInvertDark: true,
     description: [
-      "Drive 40x growth in B2B clients from 2 to 80+ firms through iterative feature development and enhancement based on client feedback, scaling the system alongside increasing demand",
-      "Achieve 20x performance boost from 8 minutes to under 25 seconds in IRCC online form autofill, overhauling the autofill engine from legacy DOM manipulation to API injection",
-      "Enable scalable white-label solutions serving 40+ client firms, implementing an Nginx reverse proxy on AWS Lightsail",
-      "Reduce manual data entry time by 50%+ across all case workflows, building an AI-powered document scanner with Google Vision OCR and OpenAI Function Calling",
-      "Automate IRCC PDF form filling with a dynamic XFA PDF generation pipeline by scripting Adobe Acrobat using Python on Windows Server",
-      "Develop and maintain a CRM dashboard using React and Express.js, providing 80+ immigration firms and 280+ employees with streamlined client, lead, and case management workflows",
+      "Grew B2B client base from 2 to 90+ firms by shipping features iteratively from client feedback and scaling infrastructure to match demand",
+      "Achieved performance boost from 8 minutes to 25 seconds in IRCC online form autofill, overhauling the autofill engine from legacy DOM manipulation to API injection",
+      "Automated filling of PDF immigration forms, unsupported by standard PDF libraries, by running Adobe Acrobat on a Windows server and executing event scripts",
+      "Streamlined casework by building an AI agent that pre-fills application forms from client emails and WhatsApp threads and flags discrepancies against submitted documents",
+      "Develop and maintain a CRM dashboard using React and Node.js, providing 90+ immigration firms and 400+ employees with streamlined client, lead, and case management workflows",
     ]
   },
   {

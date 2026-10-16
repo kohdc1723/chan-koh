@@ -20,7 +20,7 @@ export default function About() {
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <p>I'm currently working as a Full Stack Developer at VisaFlo, building B2B SaaS solutions for immigration professionals.</p>
+            <p>I'm currently working as a Software Engineer at VisaFlo, building B2B SaaS solutions for immigration professionals.</p>
             <p>I'm looking for new challenges and opportunities to grow as a developer.</p>
           </CardContent>
         </Card>

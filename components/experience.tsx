@@ -5,6 +5,7 @@ import { Card, CardHeader, CardContent, CardTitle, CardDescription } from "@/com
 import { Separator } from "@/components/ui/separator";
 
 import { experience } from "@/data/experience";
+import { cn } from "@/lib/utils";
 
 export default function Experience() {
   return (
@@ -25,7 +26,11 @@ export default function Experience() {
                 <Image
                   src={exp.logo}
                   alt={exp.company}
-                  className="size-20 rounded-md bg-gray-100 grayscale-50 object-contain p-2"
+                  className={cn(
+                    "size-20 rounded-md grayscale-50",
+                    !("logoFill" in exp) && "bg-gray-100 object-contain p-2",
+                    "logoInvertDark" in exp && "dark:invert"
+                  )}
                 />
                 <div className="flex flex-col gap-1 w-full">
                   <CardTitle className="flex flex-col">

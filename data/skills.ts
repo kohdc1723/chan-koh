@@ -6,14 +6,12 @@ import {
   SiNextdotjs,
   SiNodedotjs,
   SiExpress,
-  SiSpringboot,
   SiDotnet,
   SiSupabase,
   SiClaude,
   SiGit,
   SiDocker,
   SiMysql,
-  SiHibernate,
   SiMongodb,
   SiPrisma,
   SiGithub,
@@ -23,6 +21,7 @@ import { TbBrandCSharp } from "react-icons/tb";
 import { IoLogoFirebase } from "react-icons/io5";
 import { FaAws, FaJava } from "react-icons/fa6";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { BsOpenai } from "react-icons/bs";
 
 
 export const skills = [
@@ -48,7 +47,6 @@ export const skills = [
     skills: [
       { name: "Node.js", icon: SiNodedotjs },
       { name: "Express.js", icon: SiExpress },
-      { name: "Spring Boot", icon: SiSpringboot },
       { name: "ASP.NET Core", icon: SiDotnet },
       { name: "Firebase", icon: IoLogoFirebase },
       { name: "Supabase", icon: SiSupabase },
@@ -60,7 +58,6 @@ export const skills = [
       { name: "PostgreSQL", icon: BiLogoPostgresql },
       { name: "MySQL", icon: SiMysql },
       { name: "MongoDB", icon: SiMongodb },
-      { name: "JPA", icon: SiHibernate },
       { name: "Entity Framework", icon: SiDotnet },
       { name: "Prisma", icon: SiPrisma },
     ]
@@ -79,7 +76,7 @@ export const skills = [
     category: "AI & Tools",
     skills: [
       { name: "Claude Code", icon: SiClaude },
-      { name: "Cursor", icon: null },
+      { name: "Codex", icon: BsOpenai },
     ]
   }
 ] as const;
